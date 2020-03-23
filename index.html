@@ -1,12 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    Anithing to the Master
-    Change in the feature
-</body>
+    <link rel="stylesheet" href="style01.css" />
+  </head>
+  <body>
+    Anithing to the Master Change in the feature
+
+
+    <style>
+        input[type=text]{
+            background-color: aqua;
+        }
+
+        input[type=password]{
+            background-color: blueviolet;
+            color: white;
+        }
+    </style>
+
+    <form>
+      <div>
+        <input name="name" type="text" placeholder="Name" />
+        <input name="password" type="password" placeholder="password" />
+      </div> 
+
+      <div>
+        <input type="radio" name="color" value="red" /> Red
+        <input type="radio" name="color" value="green" /> Green
+        <input type="radio" name="color" value="blue" /> Blue
+        <input type="radio" name="color" value="other" /> Other
+      </div>
+
+      <div>
+        <input name="country" list="countries" placeholder="Country" />
+        <datalist id="countries">
+          <option value="Brazil"> </option>
+          <option value="USA"> </option>
+          <option value="Canada"> </option>
+          <option value="Sweden"> </option>
+          <option value="Portugal"> </option>
+        </datalist>
+      </div>
+    </form>
+
+    <button>Click me</button>
+
+  </body>
 </html>
